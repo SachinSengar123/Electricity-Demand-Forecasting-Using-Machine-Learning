@@ -63,55 +63,6 @@ The models can be evaluated using:
 | HTML & CSS | Frontend development |
 | Plotly | Interactive data visualization |
 
-## 💻 Installation & Setup
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/GridCast-AI.git
-```
-
-### 2. Navigate to the Project Folder
-
-```bash
-cd GridCast-AI
-```
-
-### 3. Create a Virtual Environment (Recommended)
-
-```bash
-python -m venv venv
-```
-
-Activate it on Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-### 4. Install Dependencies
-
-If your repository contains a `requirements.txt` file:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 5. Run the Application
-
-For a Flask application with `app.py` as its entry point:
-
-```bash
-python app.py
-```
-
-Open the following address in your browser:
-
-```text
-http://127.0.0.1:5000/
-```
-
-*Note: Update the run command if your application uses a different entry-point file.*
 
 ## 🌍 Applications & Social Impact
 
