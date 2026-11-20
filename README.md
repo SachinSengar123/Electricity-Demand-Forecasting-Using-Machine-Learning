@@ -1,143 +1,152 @@
-# Electricity-Demand-Forecasting-Using-Machine-Learning
+# ⚡ GridCast AI – Electricity Demand Forecasting Using Machine Learning
 
-⚡ GridCast AI – Electricity Demand Forecasting Using Machine Learning
-📌 About the Project
+GridCast AI is a machine learning-based electricity demand forecasting system designed to predict future electricity consumption and identify peak-load periods. It analyzes historical electricity demand patterns and uses machine learning techniques to generate hourly forecasts for the next 24 hours.
 
-GridCast AI is a machine learning-based electricity demand forecasting system designed to predict future electricity consumption using historical demand patterns.
+The project provides an interactive dashboard to visualize demand trends, predicted electricity requirements, peak-demand periods, and model performance.
 
-The project uses Time-Series Forecasting, Regression Algorithms, and Long Short-Term Memory (LSTM) networks to analyse historical electricity demand and predict upcoming demand.
+## 🎯 Project Objectives
 
-The system provides an interactive dashboard that displays predicted electricity demand, historical trends, peak-load periods, and forecasting insights.
+- Predict future electricity demand using historical data.
+- Forecast hourly electricity demand for the next 24 hours.
+- Identify expected peak-demand periods.
+- Compare different machine learning forecasting models.
+- Visualize historical and predicted demand through an interactive dashboard.
+- Support better electricity planning and resource management.
 
-The main aim is to support smarter energy planning, improve resource management, and help anticipate periods of high electricity demand.
+## 🚀 Key Features
 
-🎯 Project Objectives
-Predict future electricity demand using historical data.
-Identify peak electricity demand periods.
-Analyse electricity consumption patterns over time.
-Implement and compare different machine learning algorithms.
-Visualize actual and predicted demand through an interactive dashboard.
-Support better electricity generation and distribution planning.
-🚀 Key Features
-Electricity Demand Prediction: Forecasts electricity demand for upcoming hours.
-24-Hour Forecasting: Generates hourly demand predictions for the next 24 hours.
-Peak Load Detection: Identifies the expected maximum electricity demand and its time.
-Historical Data Analysis: Analyses previous electricity demand patterns.
-Model Comparison: Compares the performance of different machine learning models.
-Interactive Dashboard: Displays forecasts, trends, and important statistics.
-Data Visualization: Presents demand patterns using interactive charts and graphs.
-🧠 Machine Learning Techniques
+- **24-Hour Demand Forecasting:** Predicts electricity demand for upcoming hours.
+- **Peak Load Analysis:** Identifies expected maximum demand and peak time.
+- **Interactive Dashboard:** Displays demand trends and forecasting results.
+- **Model Comparison:** Evaluates different machine learning approaches.
+- **Historical Data Analysis:** Analyzes electricity consumption patterns.
+- **Forecast Visualization:** Compares historical and predicted demand using charts.
+- **Demand Alerts:** Highlights periods of potentially high electricity demand.
 
-The project explores the following approaches:
+## 🧠 Machine Learning Techniques
 
-1. Time-Series Forecasting
+The project explores different forecasting approaches:
 
-Analyses historical electricity demand data to identify trends, seasonal patterns, and time-dependent behaviour.
+1. **Time-Series Forecasting:** Uses historical demand patterns to estimate future values.
+2. **Linear Regression:** Models relationships between demand and relevant input features.
+3. **Random Forest Regression:** Uses multiple decision trees to improve prediction performance.
+4. **LSTM (Long Short-Term Memory):** Learns sequential patterns from historical electricity demand data.
 
-2. Linear Regression
+The models can be evaluated using:
 
-A regression algorithm used to understand relationships between time-related features and electricity demand.
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- Mean Absolute Percentage Error (MAPE)
+- R-squared (R²)
 
-3. Random Forest Regression
+## ⚙️ How It Works
 
-An ensemble learning algorithm that combines multiple decision trees to predict electricity demand.
+1. Collect historical electricity demand data.
+2. Clean and preprocess the dataset.
+3. Perform Exploratory Data Analysis (EDA).
+4. Create time-based and historical demand features.
+5. Train machine learning forecasting models.
+6. Generate hourly electricity demand predictions.
+7. Identify expected peak-demand periods.
+8. Display forecasting results on the dashboard.
 
-4. LSTM (Long Short-Term Memory)
+## 🛠️ Technologies Used
 
-A deep learning architecture designed to learn sequential patterns and long-term dependencies in historical electricity demand data.
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| Pandas | Data processing |
+| NumPy | Numerical computations |
+| Scikit-learn | Machine learning models |
+| TensorFlow / Keras | LSTM model development |
+| Flask | Backend development |
+| HTML & CSS | Frontend development |
+| Plotly | Interactive data visualization |
 
-5. Baseline Forecasting
+## 💻 Installation & Setup
 
-Simple forecasting techniques such as Naive Forecasting and Moving Average are used as reference models.
+### 1. Clone the Repository
 
-⚙️ How Does It Work?
+```bash
+git clone https://github.com/your-username/GridCast-AI.git
+```
 
-The project follows these major steps:
+### 2. Navigate to the Project Folder
 
-Data Collection: Obtain historical electricity demand data.
-Data Preprocessing: Handle missing values, duplicate records, and inconsistent timestamps.
-Exploratory Data Analysis: Study historical demand patterns using visualizations.
-Feature Engineering: Extract useful features such as hour, day, month, and historical demand values.
-Model Training: Train regression and LSTM models using historical data.
-Model Evaluation: Compare predictions using performance metrics.
-Demand Forecasting: Generate predictions for the upcoming 24 hours.
-Visualization: Display forecast results and peak-demand insights on the dashboard.
-📊 Model Evaluation Metrics
+```bash
+cd GridCast-AI
+```
 
-The performance of the machine learning models can be evaluated using:
+### 3. Create a Virtual Environment (Recommended)
 
-Metric	Description
-MAE	Mean Absolute Error
-RMSE	Root Mean Squared Error
-MAPE	Mean Absolute Percentage Error
-R² Score	Measures the proportion of variance explained by the model
+```bash
+python -m venv venv
+```
 
-Lower MAE, RMSE, and MAPE generally indicate better prediction accuracy. R² provides additional information about model fit.
+Activate it on Windows:
 
-🌍 How Is This Project Useful to Society?
+```bash
+venv\Scripts\activate
+```
 
-Electricity is an essential resource for households, industries, hospitals, educational institutions, and businesses.
+### 4. Install Dependencies
 
-Accurate electricity demand forecasting can help:
+If your repository contains a `requirements.txt` file:
 
-Energy Planning: Estimate future electricity requirements.
-Peak Load Management: Identify periods when electricity demand may be high.
-Resource Optimization: Support efficient scheduling of generation and distribution resources.
-Industrial Management: Help industries plan their energy consumption.
-Renewable Energy Integration: Support planning for renewable energy sources.
-Grid Management: Provide useful insights for electricity distribution planning.
+```bash
+pip install -r requirements.txt
+```
 
-The project aims to contribute towards a smarter and more efficient energy management system.
+### 5. Run the Application
 
-🛠️ Technologies Used
-Technology	Purpose
-Python	Core programming language
-Pandas	Data manipulation and analysis
-NumPy	Numerical computations
-Scikit-learn	Machine learning and regression
-TensorFlow / Keras	LSTM model development
-Matplotlib / Seaborn	Data visualization
-Flask	Backend API development
-HTML, CSS, JavaScript	Frontend development
-📈 Expected Output
+For a Flask application with `app.py` as its entry point:
 
-The system is designed to provide:
+```bash
+python app.py
+```
 
-Predicted electricity demand for the next 24 hours.
-Hourly electricity demand forecast.
-Expected peak electricity demand.
-Expected peak-demand time.
-Historical versus predicted demand visualization.
-Model performance comparison.
-🔮 Future Enhancements
+Open the following address in your browser:
 
-The project can be further improved by implementing:
+```text
+http://127.0.0.1:5000/
+```
 
-Real-time electricity demand data integration.
-Weather-based demand forecasting.
-Holiday and special-event analysis.
-Advanced deep learning models.
-Multi-day and regional demand forecasting.
-Prediction confidence intervals.
-Automated peak-load alerts.
-💡 Conclusion
+*Note: Update the run command if your application uses a different entry-point file.*
 
-GridCast AI demonstrates how machine learning and deep learning can be used to forecast electricity demand and analyse consumption patterns.
+## 🌍 Applications & Social Impact
 
-By combining time-series forecasting, regression algorithms, and LSTM networks, the project aims to provide useful predictions and insights that can support better energy planning and resource management.
+GridCast AI can support:
 
-The ultimate vision is to contribute towards a smarter, more reliable, and energy-efficient future.
+- **Electricity Distribution Companies:** Better demand estimation and resource planning.
+- **Power Grid Management:** Early identification of expected high-demand periods.
+- **Industrial Facilities:** Improved energy consumption scheduling.
+- **Renewable Energy Planning:** Supporting the planning of solar and wind energy integration.
+- **Energy Management:** More informed decisions about electricity requirements.
 
-⭐ Project Highlights
+The system is intended as a decision-support tool. Forecasts do not directly generate electricity or guarantee prevention of power outages.
 
-Project Name: GridCast AI
+## 🔮 Future Scope
 
-Domain: Machine Learning & Deep Learning
+- Integration with real-time electricity consumption APIs.
+- Weather-based demand forecasting.
+- Regional electricity demand prediction.
+- Improved deep learning models.
+- Mobile-friendly dashboard.
+- Automated peak-demand notifications.
+- Longer-term forecasting capabilities.
 
-Application: Electricity Demand Forecasting
+## 📌 Project Status
 
-Forecasting Horizon: Next 24 Hours
+**Project:** GridCast AI – Electricity Demand Forecasting Using Machine Learning
 
-Core Concepts: Time-Series Forecasting, Regression, LSTM
+**Status:** Academic / Educational Project
 
-Purpose: Smarter Electricity Demand Prediction and Energy Planning
+**Focus:** Time-Series Forecasting, Regression and LSTM
+
+## 📄 License
+
+This project is developed for educational and academic purposes. A license can be added to define the terms under which the source code may be reused or distributed.
+
+---
+
+⭐ If you find this project interesting, consider giving the repository a star!
